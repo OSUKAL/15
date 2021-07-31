@@ -1,0 +1,48 @@
+html {
+   font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   height: 100vh;
+   margin: 0;
+
+   font-size: 5rem;
+   color: #fff;
+
+   background: #999;
+}
+
+.tag {
+   margin: auto;
+
+   border: .5rem #333 solid;
+   border-spacing: 0;
+   border-collapse: collapse;
+
+   background: #666;
+}
+
+.tag__cell {
+   width: 10rem;
+   height: 10rem;
+
+   text-align: center;
+
+   border: 3px solid #555;
+
+   background: #777;
+   cursor: pointer;
+}
+
+.tag__cell.empty {
+   background: transparent;
+}
